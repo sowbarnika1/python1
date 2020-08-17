@@ -20,7 +20,7 @@ for i in range(n):
     if(c1[i]+c2[i]!=mi):
         d=mi-(c1[i]+c2[i])
         c2[i]=c2[i]+d
-    print c1[i],c2[i]
+    #print c1[i],c2[i]
     if(c1[i]==c2[i]):
         ans=ans+1
 for i in range(0,n):
@@ -35,6 +35,6 @@ for i in range(0,n):
     for j in range(i+2,n-1):
         if((c1[i]+c1[j]==c2[i]+c2[j])):
             ans=ans+1
-print ans
+#print ans
 t=bin(ans).replace("0b","")
 print (t.zfill(mi))
